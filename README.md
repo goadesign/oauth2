@@ -190,6 +190,6 @@ The implementation of these methods can take advantage of the errors defined in 
 particular the `NewError` function should be used to create the instances of errors returned by the
 methods.
 
-The [https://github.com/goadesign/examples/security](security example) contains a complete
+The [security example](https://github.com/goadesign/examples/blob/master/security) contains a complete
 implementation of a OAuth2 provider as well as instructions for how to use the generated client to
 make requests to go through the authorization flow.
