@@ -117,13 +117,10 @@ instantiating the `ProviderController` struct provided in this package and using
 implement the generated controller actions.
 
 There are two actions genererated: `Authorize` and `GetToken`. The `ProviderController` struct
-exposes methods with the same name that provide the implementation for them. Since the signature for
-these methods uses the generated context `ProviderController` cannot use the exact same signature.
-Instead it uses more generic data types.
+exposes methods with the same names that provide the implementation for the respective actions.
 
-Concretly here is how the generated controller should be implemented. The following should be
-written in the generated `oauth2_provider.go` file and replace the correspodning placeholder
-functions:
+Concretly here is how the generated controller could be implemented. The following should be written
+in the generated `oauth2_provider.go` file and replace the correspodning placeholder functions:
 
 ```go
 // NewOAuth2ProviderController creates a OAuth2Provider controller.
@@ -192,3 +189,7 @@ properly formatted success or error responses.
 The implementation of these methods can take advantage of the errors defined in this package. In
 particular the `NewError` function should be used to create the instances of errors returned by the
 methods.
+
+The [https://github.com/goadesign/examples/security](security example) contains a complete
+implementation of a OAuth2 provider as well as instructions for how to use the generated client to
+make requests to go through the authorization flow.
