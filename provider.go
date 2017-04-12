@@ -6,13 +6,12 @@ Package oauth2 contains the implementation of the OAuth2 provider controller.
 package oauth2
 
 import (
+	"context"
 	"net/http"
 	"net/url"
 
 	"github.com/goadesign/goa"
 	"github.com/goadesign/oauth2/app"
-
-	"golang.org/x/net/context"
 )
 
 type (

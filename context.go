@@ -1,6 +1,6 @@
 package oauth2
 
-import "golang.org/x/net/context"
+import "context"
 
 // Private type used to key context.
 type key int
